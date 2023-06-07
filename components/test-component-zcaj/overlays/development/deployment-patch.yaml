@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-zcaj
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-mbre-tenant/test-app-wybi/test-component-zcaj@sha256:3932469d1da3c87d806a639efddcc492c97e70fcc2008ec554671d28172a9b0b
+        name: my-python
+        resources: {}
+status: {}
